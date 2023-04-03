@@ -2,14 +2,14 @@
   <AppHeader />
   <SideBar
     :class="useActionStore().sidebar ? 'slide-in-left' : 'slide-out-left'" />
-  <main
-    :class="{ 'ml-[--sidebar-w]': useActionStore().sidebar }"
-    class="px-3 relative min-h-screen transition-all mt-20">
-    <NoteList v-if="notes.length > 0" />
-    <router-link to="/note/create">
-      <CreateBtn />
-    </router-link>
-  </main>
+    <main
+      :class="{ 'ml-[--sidebar-w]': useActionStore().sidebar }"
+      class="px-3 relative min-h-screen transition-all mt-20">
+      <NoteList v-if="notes.length > 0" />
+      <router-link to="/note/create">
+        <CreateBtn />
+      </router-link>
+    </main>
 </template>
 
 <script setup lang="ts">

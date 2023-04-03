@@ -1,14 +1,14 @@
 <template>
-  <div
-    :class="{ 'grid-cols-1': action.sidebar }"
-    class="grid gap-3 mt-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
+  <div class="grid grid-cols-custom sm:grid-cols-custom-sm gap-3">
     <router-link
-      v-for="(note, index) in notes"
+      v-for="note in notes"
       :key="note.id"
       :to="`note/${note.id}`">
       <div
-        class="card card-compact gap-0 bg-slate-200 shadow-lg rounded-md text-slate-700">
-        <h2 class="card-title leading-4 px-2 pt-2 text-sm">{{ note.title }}</h2>
+        class="card h-full card-compact gap-0 bg-slate-200 shadow-lg rounded-md text-slate-700">
+        <h2 class="card-title leading-4 px-2 pt-2 text-sm">
+          {{ note.title }}
+        </h2>
         <div
           class="card-body"
           style="padding: 0 16px 8px">
@@ -27,4 +27,11 @@
   const { notes } = storeToRefs(useNoteStore());
   console.log("listitem rendered");
 </script>
-<style></style>
+<style>
+  .grid-cols-custom {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+  .grid-cols-custom-sm {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+</style>
