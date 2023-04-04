@@ -5,6 +5,7 @@ export const useActionStore = defineStore('appAction', {
     state: () => ({
         sidebar: false,
         userMenu: false,
+        searchBar: false,
         toast: ''
     }),
     actions: {
@@ -18,6 +19,9 @@ export const useActionStore = defineStore('appAction', {
 
         toggleUserMenu() {
             this.userMenu = !this.userMenu
+        },
+        toggleSearchBar() {
+            this.searchBar = !this.searchBar
         }
     }
 })

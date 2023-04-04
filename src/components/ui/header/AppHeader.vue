@@ -14,12 +14,17 @@
           "></i-clarity-close-line>
       </IconBtn>
     </div>
-    <!-- <div class="navbar-center">
-      <AppLogo />
-    </div> -->
+    <SearchBar class="navbar-center"></SearchBar>
     <div class="navbar-end">
-      <IconBtn class="btn-sm md:btn-md">
-        <i-clarity-search-line></i-clarity-search-line>
+      <IconBtn
+        @click="action.toggleSearchBar"
+        class="btn-sm md:btn-md">
+        <div v-show="!action.searchBar">
+          <i-clarity-search-line></i-clarity-search-line>
+        </div>
+        <div v-show="action.searchBar">
+          <i-carbon-chevron-right></i-carbon-chevron-right>
+        </div>
       </IconBtn>
       <router-link to="/note/create">
         <IconBtn class="btn-sm md:btn-md">
@@ -36,10 +41,9 @@
 </template>
 
 <script lang="ts" setup>
-  import SideBar from "./SideBar.vue";
   import IconBtn from "./actions/IconBtn.vue";
-  import AppLogo from "../../AppLogo.vue";
   import { useActionStore } from "../../../stores/useActionStore";
+  import SearchBar from "./SearchBar.vue";
 
   const action = useActionStore();
 </script>
