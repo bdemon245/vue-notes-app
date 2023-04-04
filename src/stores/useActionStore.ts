@@ -4,6 +4,7 @@ import { defineStore } from 'pinia'
 export const useActionStore = defineStore('appAction', {
     state: () => ({
         sidebar: false,
+        userMenu: false,
         toast: ''
     }),
     actions: {
@@ -14,5 +15,9 @@ export const useActionStore = defineStore('appAction', {
         closeSidebar() {
             this.sidebar = false  
         },
+
+        toggleUserMenu() {
+            this.userMenu = !this.userMenu
+        }
     }
 })

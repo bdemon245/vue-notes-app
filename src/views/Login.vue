@@ -4,9 +4,11 @@
       class="flex flex-col items-center justify-center h-full w-screen gap-3">
       <div class="max-w-sm px-3">
         <div class="flex items-center mb-16">
-          <CloseBtn class="text-xs">
-            <router-link to="/">back</router-link>
-          </CloseBtn>
+            <router-link to="/">
+              <IconBtn >
+                <i-mdi-arrow-left></i-mdi-arrow-left>
+              </IconBtn>
+            </router-link>
           <AppLogo class="mx-auto text-primary font-bold" />
         </div>
         <form
@@ -52,9 +54,8 @@
 <script setup lang="ts">
   import { useRouter } from "vue-router";
   import AppLogo from "../components/AppLogo.vue";
-  import AcceptBtn from "../components/ui/main/actions/AcceptBtn.vue";
-  import CloseBtn from "../components/ui/main/actions/CloseBtn.vue";
-  import Cipher from "../services/Cipher";
+import IconBtn from "../components/ui/header/actions/IconBtn.vue";
+import AcceptBtn from "../components/ui/main/actions/AcceptBtn.vue";
   import { useUserStore } from "../stores/useUserStore";
 
   const store = useUserStore();

@@ -1,5 +1,5 @@
 <template>
-  <header class="z-10 navbar bg-base-100 fixed top-0 shadow-md">
+  <header class="z-10 navbar bg-base-100 fixed top-0 left-0 shadow-md">
     <div class="navbar-start">
       <IconBtn @click="action.toggleSidebar">
         <i-clarity-menu-line
@@ -18,15 +18,17 @@
       <AppLogo />
     </div> -->
     <div class="navbar-end">
+      <IconBtn class="btn-sm md:btn-md">
+        <i-clarity-search-line></i-clarity-search-line>
+      </IconBtn>
       <router-link to="/note/create">
-        <IconBtn class="btn-sm">
+        <IconBtn class="btn-sm md:btn-md">
           <i-clarity-note-line></i-clarity-note-line>
         </IconBtn>
       </router-link>
-      <IconBtn class="btn-sm">
-        <i-clarity-search-line></i-clarity-search-line>
-      </IconBtn>
-      <IconBtn class="btn-sm">
+      <IconBtn
+        @click="action.toggleUserMenu"
+        class="btn-sm md:btn-md">
         <i-clarity-user-line></i-clarity-user-line>
       </IconBtn>
     </div>
