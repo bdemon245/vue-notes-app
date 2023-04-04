@@ -69,7 +69,8 @@
   .search-bar-enter-active {
     -webkit-animation: scale-in-hor-right 250ms
       cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    animation: scale-in-hor-right 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: scale-in-hor-right 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
   }
 
   /* ----------------------------------------------
