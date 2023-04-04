@@ -32,6 +32,6 @@
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
   .grid-cols-custom-sm {
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   }
 </style>
