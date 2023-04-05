@@ -64,6 +64,7 @@ declare module '@vue/runtime-core' {
     SideBar: typeof import('./src/components/ui/header/SideBar.vue')['default']
     TextareaInput: typeof import('./src/components/forms/TextareaInput.vue')['default']
     TextInput: typeof import('./src/components/forms/TextInput.vue')['default']
+    Toast: typeof import('./src/components/toast/Toast.vue')['default']
     UserMenu: typeof import('./src/components/ui/header/UserMenu.vue')['default']
   }
 }

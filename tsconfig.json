@@ -17,7 +17,7 @@
     "noEmit": true,
     "types": [
       "unplugin-icons/types/vue",
-    ]
+    ],
   },
   "include": [
     "src/**/*.ts",
@@ -29,5 +29,5 @@
     {
       "path": "./tsconfig.node.json"
     }
-  ]
+  ],
 }

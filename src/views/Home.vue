@@ -1,4 +1,5 @@
 <template>
+  
   <div class="relative">
     <AppHeader />
     <UserMenu></UserMenu>
@@ -26,6 +27,8 @@
   import { useActionStore } from "../stores/useActionStore";
   import CreateBtn from "../components/ui/main/actions/CreateBtn.vue";
   import UserMenu from "../components/ui/header/UserMenu.vue";
+  
+
   //stores
   const noteStore = useNoteStore();
   const { notes } = storeToRefs(noteStore);
