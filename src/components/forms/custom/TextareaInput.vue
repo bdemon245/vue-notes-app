@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
   import { storeToRefs } from "pinia";
-  import { useNoteStore } from "../../stores/useNoteStore";
+  import { useNoteStore } from "../../../stores/useNoteStore";
   import { ref, onMounted } from "vue";
 
   const store = useNoteStore();

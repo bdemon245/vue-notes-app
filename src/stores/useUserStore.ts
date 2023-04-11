@@ -33,13 +33,18 @@ export const useUserStore = defineStore('user', {
         },
         password: {
             value: "",
-            error : ''
+            error: '',
+            isVisible: false,
         },
         isAuth: false
     }),
     getters: {
         getUser():object{
             return this.user;
+        },
+        toggleVisibility(): Boolean{
+            this.password.isVisible = !this.password.isVisible
+            return !this.password.isVisible
         }
     },
     actions: {

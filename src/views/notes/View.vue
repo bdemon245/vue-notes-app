@@ -10,8 +10,8 @@
   </div>
 </template>
 <script setup lang="ts">
-  import TextareaInput from "../../components/forms/TextareaInput.vue";
-  import TextInput from "../../components/forms/TextInput.vue";
+  import TextareaInput from "../../components/forms/custom/TextareaInput.vue";
+  import TextInput from "../../components/forms/custom/TextInput.vue";
   import IconBtn from "../../components/ui/header/actions/IconBtn.vue";
   import { useRoute } from "vue-router";
   import { useNoteStore } from "../../stores/useNoteStore";
