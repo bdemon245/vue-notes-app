@@ -15,6 +15,5 @@
   const store = useNoteStore();
   const { title } = storeToRefs(store);
   onMounted(() => {
-    console.log("input field rendered");
   });
 </script>

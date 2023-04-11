@@ -17,6 +17,7 @@
     "react-hot-toast": "^2.4.0",
     "vue": "^3.2.47",
     "vue-axios": "^3.5.2",
+    "vue-m-message": "^4.0.2",
     "vue-notifications": "^1.0.2",
     "vue-router": "^4.1.6",
     "vue-sonner": "^0.3.1"

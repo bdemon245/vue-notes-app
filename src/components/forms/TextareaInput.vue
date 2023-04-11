@@ -22,6 +22,5 @@
 
   onMounted(() => {
     input.value.focus();
-    console.log("TextArea for note rendered");
   });
 </script>

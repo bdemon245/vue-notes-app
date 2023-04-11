@@ -25,7 +25,6 @@
 
   const action = useActionStore();
   const { notes } = storeToRefs(useNoteStore());
-  console.log("listitem rendered");
 </script>
 <style>
   .grid-cols-custom {

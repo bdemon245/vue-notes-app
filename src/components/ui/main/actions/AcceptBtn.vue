@@ -5,5 +5,4 @@
 </template>
 
 <script lang="ts" setup>
-  console.log("Accept btn rendered");
 </script>

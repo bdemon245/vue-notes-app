@@ -5,5 +5,4 @@
 </template>
 
 <script lang="ts" setup>
-  console.log("Close btn rendered");
 </script>

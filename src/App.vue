@@ -1,9 +1,6 @@
 <script setup lang="ts">
-  import { onMounted } from "vue";
-  import { toast, Toaster } from "vue-sonner";
-  onMounted(() => {
-    toast.success("success");
-  });
+import { toast, Toaster } from "vue-sonner";
+
 </script>
 
 <template>

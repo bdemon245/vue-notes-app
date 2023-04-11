@@ -33,7 +33,5 @@
   import { useActionStore } from "../../../stores/useActionStore";
 
   const action = useActionStore();
-  onMounted(() => {
-    console.log("sidebar rendered");
-  });
+  
 </script>
