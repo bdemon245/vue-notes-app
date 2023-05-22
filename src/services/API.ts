@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-export default (url= "http://localhost:8000/api/v1")=>{
+export default (url= "https://notes-api.wisedev.xyz/api/v1/notes")=>{
     return axios.create({
         baseURL: url
     })
