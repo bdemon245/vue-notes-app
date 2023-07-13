@@ -43,6 +43,7 @@ declare module '@vue/runtime-core' {
     IClaritySettingLine: typeof import('~icons/clarity/setting-line')['default']
     IClaritySettingsLine: typeof import('~icons/clarity/settings-line')['default']
     IClaritySortByLine: typeof import('~icons/clarity/sort-by-line')['default']
+    IClaritySunLine: typeof import('~icons/clarity/sun-line')['default']
     IClarityUser: typeof import('~icons/clarity/user')['default']
     IClarityUserLine: typeof import('~icons/clarity/user-line')['default']
     IconBtn: typeof import('./src/components/ui/header/actions/IconBtn.vue')['default']

@@ -5,7 +5,7 @@
       :key="note.id"
       :to="`note/${note.id}`">
       <div
-        class="card h-full card-compact gap-0 bg-slate-200 shadow-lg rounded-md text-slate-700">
+        class="card h-full card-compact gap-0 shadow-lg rounded-md bg-base-200">
         <h2 class="card-title leading-4 px-2 pt-2 text-sm">
           {{ note.title }}
         </h2>

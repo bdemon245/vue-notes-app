@@ -24,7 +24,7 @@ import { toast } from "vue-sonner";
       store.saveNote();
       toast.success('Note Created')
     } else {
-      store.updateNote(id);
+      store.updateNote(id as string);
       toast.success('Note Updated')
     }
     route.push("/");
