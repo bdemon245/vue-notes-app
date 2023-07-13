@@ -44,13 +44,12 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from "vue";
 import { useActionStore } from "../../../stores/useActionStore";
+import { useThemeStore } from "../../../stores/useThemeStore";
+import { storeToRefs } from "pinia";
 
-const theme = ref('light');
 const action = useActionStore();
-
-function toggleTheme() {
-  theme.value = theme.value === "light" ? 'dark' : 'light'
-}
+const {theme} = storeToRefs(useThemeStore())
+const {toggleTheme} = useThemeStore()
 
 onMounted(() => {
   document.documentElement.setAttribute('data-theme', theme.value)
