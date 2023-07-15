@@ -11,7 +11,7 @@
       <input
         :id="label"
         :value="value"
-        @input="$emit('update:value', $event.target?.value)"
+        @input="$emit('update:value', ($event.target as HTMLInputElement)?.value)"
         :class="{ 'shake-hr outline outline-error': error }"
         class="w-full px-2 py-2 bg-base-100 rounded-md shadow-md focus:outline-primary placeholder:capitalize"
         :placeholder="label"
